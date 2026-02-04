@@ -28,4 +28,12 @@ Leetcode-Solutions/ <br>
 ├── Graphs/ <br>
 └── Dynamic Programming/ <br>
 ```
+Each file contains:
+- ✔ Problem Number
+- ✔ Problem Name
+- ✔ Approach Explanation
+- ✔ Time & Space Complexity
 
+---
+
+## 🧩 Problem Naming Convention
