@@ -18,14 +18,14 @@ The goal of this repository is to strengthen problem-solving skills, improve dat
 '''
 Leetcode-Solutions/
 │
-├── Arrays/
-├── Linked List/
-├── Strings/
-├── Bit Manipulation/
-├── Recursion/
-├── Stack & Queue/
-├── Trees/
-├── Graphs/
-└── Dynamic Programming/
+├── Arrays/ <br>
+├── Linked List/ <br>
+├── Strings/ <br>
+├── Bit Manipulation/ <br>
+├── Recursion/ <br>
+├── Stack & Queue/ <br>
+├── Trees/ <br>
+├── Graphs/ <br>
+└── Dynamic Programming/ <br>
 '''
 
