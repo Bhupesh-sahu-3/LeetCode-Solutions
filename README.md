@@ -37,3 +37,7 @@ Each file contains:
 ---
 
 ## 🧩 Problem Naming Convention
+```
+ProblemNumber_ProblemName.cpp
+```
+
