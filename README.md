@@ -15,9 +15,9 @@ The goal of this repository is to strengthen problem-solving skills, improve dat
 
 ## 📂 Repository Structure
 
-'''
-Leetcode-Solutions/
-│
+```
+Leetcode-Solutions/ <br>
+│ <br>
 ├── Arrays/ <br>
 ├── Linked List/ <br>
 ├── Strings/ <br>
@@ -27,5 +27,5 @@ Leetcode-Solutions/
 ├── Trees/ <br>
 ├── Graphs/ <br>
 └── Dynamic Programming/ <br>
-'''
+```
 
