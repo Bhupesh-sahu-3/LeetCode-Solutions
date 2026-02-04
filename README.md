@@ -40,4 +40,49 @@ Each file contains:
 ```
 ProblemNumber_ProblemName.cpp
 ```
+---
+
+## 🏆 Learning Strategy
+
+- Understand problem statement clearly  
+- Implement brute force solution  
+- Optimize step by step  
+- Analyze complexity  
+- Maintain clean and readable code  
+
+---
+
+## 📈 Progress Tracker
+
+- [ ] Arrays  
+- [ ] Strings  
+- [ ] Linked List  
+- [ ] Recursion  
+- [ ] Bit Manipulation  
+- [ ] Stack & Queue  
+- [ ] Trees  
+- [ ] Graphs  
+- [ ] Dynamic Programming  
+
+---
+
+## 🛠 Tools Used
+- VS Code  
+- Git & GitHub  
+- LeetCode Platform  
+
+---
+
+## 🤝 Contributions
+This is a personal learning repository. Suggestions and improvements are always welcome.
+
+---
+
+## ⭐ Support
+If you find this repository helpful, consider giving it a star.
+
+---
+
+## 📬 Connect With Me
+GitHub: https://github.com/Bhupesh-sahu-3
 
