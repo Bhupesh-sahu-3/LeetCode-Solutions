@@ -8,23 +8,48 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+ //using stack
+ //o(2n) time and o(n) space
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        stack<int>st;
+        stack<int>st;                              //o(n) space
         ListNode *temp = head;
-        while(temp)
+        while(temp)                                 //o(n) time
         {
             st.push(temp->val);
             temp=temp->next;
         }
         temp=head;
-        while(temp)
+        while(temp)                                 //o(n) time
         {
             temp->val = st.top();
             st.pop();
             temp=temp->next;
         }
        return head;
+    }
+};
+
+
+ //iterative method
+ //o(n) time
+ //o(1)space
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* front=NULL;
+        ListNode* prev = NULL;
+        ListNode* current = head;
+
+        while(current)
+        {
+            front = current->next;
+            current->next = prev;
+            prev=current;
+            current=front;
+        }
+        return prev;
     }
 };
