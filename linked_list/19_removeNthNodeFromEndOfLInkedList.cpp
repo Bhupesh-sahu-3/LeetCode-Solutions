@@ -8,7 +8,9 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
- //method1: Reverse list and remove nth node
+
+
+ //method1: calculate size of linked list and then delete the (size-n)th node
  //time:o(length of LL+ length of LL - n)
  //space:o(1)
 class Solution {
@@ -52,5 +54,51 @@ public:
        }
 
         return head;
+    }
+};
+
+
+
+ //method2: use two pointers, move the fast pointer n steps ahead 
+ //and then move both slow and fast pointers together until fast reaches the end of the linked list. 
+ //At that point slow pointer will be just before the nth node from the end. 
+ //Just change the links to delete the nth node from the end.
+ //time:o(size of linked list)
+ //space:o(1)
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+       ListNode* slow=head;
+       ListNode* fast=head;
+       ListNode* temp = head;
+
+        if(head==NULL) return NULL;
+        if(head->next==NULL && n==1)
+        return NULL;
+
+       for(int i=0; i<n; ++i)  // o(n)   n is constant
+       fast=fast->next;
+
+       if(fast==NULL)       //if n is the size of LL then the fast reaches NULL 
+       {                    //so basically we delete the head node and return head->next as new head
+        ListNode* delNode = head;
+        head=head->next;
+        delete delNode;
+        return head;
+       }
+
+       while(fast->next!=NULL)   //o(size of LL)
+       {
+        slow=slow->next;
+        fast=fast->next;
+       }
+       
+
+       ListNode* delNode = slow->next;
+       slow->next = slow->next->next;
+       delNode->next= nullptr;
+       delete delNode;
+       return head;
+        
     }
 };
