@@ -9,46 +9,49 @@
  * };
  */
 
- //using stack
- //o(2n) time and o(n) space
-class Solution {
+// using stack
+// o(2n) time and o(n) space
+class Solution
+{
 public:
-    ListNode* reverseList(ListNode* head) {
-        stack<int>st;                              //o(n) space
+    ListNode *reverseList(ListNode *head)
+    {
+        stack<int> st; // o(n) space
         ListNode *temp = head;
-        while(temp)                                 //o(n) time
+        while (temp) // o(n) time
         {
             st.push(temp->val);
-            temp=temp->next;
+            temp = temp->next;
         }
-        temp=head;
-        while(temp)                                 //o(n) time
+        temp = head;
+        while (temp) // o(n) time
         {
             temp->val = st.top();
             st.pop();
-            temp=temp->next;
+            temp = temp->next;
         }
-       return head;
+        return head;
     }
 };
 
-
- //iterative method
- //o(n) time
- //o(1)space
-class Solution {
+// iterative method
+// o(n) time
+// o(1)space
+class Solution
+{
 public:
-    ListNode* reverseList(ListNode* head) {
-        ListNode* front=NULL;
-        ListNode* prev = NULL;
-        ListNode* current = head;
+    ListNode *reverseList(ListNode *head)
+    {
+        ListNode *front = NULL;
+        ListNode *prev = NULL;
+        ListNode *current = head;
 
-        while(current)
+        while (current)
         {
             front = current->next;
             current->next = prev;
-            prev=current;
-            current=front;
+            prev = current;
+            current = front;
         }
         return prev;
     }
