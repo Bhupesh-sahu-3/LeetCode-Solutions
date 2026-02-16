@@ -1,4 +1,4 @@
-# 🚀 LeetCode Solutions
+# 🚀 DSA LeetCode Solutions
 
 This repository contains my solutions to LeetCode problems implemented in **C++**.  
 The goal of this repository is to strengthen problem-solving skills, improve data structures and algorithms knowledge, and maintain a structured coding practice record.
